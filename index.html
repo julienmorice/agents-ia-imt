@@ -285,6 +285,20 @@ p.small{font-size:22px;line-height:1.5;color:#5a5a5a}
 .t-photo .big{font-size:64px;line-height:1.1;font-weight:700;color:#fff;letter-spacing:-.02em}
 .t-photo .sub{margin-top:20px;font-size:32px;color:rgba(255,255,255,.85)}
 .t-photo .hl{color:#e05cbf}
+
+/* ---------- fin : contacts ---------- */
+.t-end2{background:var(--violet);display:grid;grid-template-columns:52% 48%;align-items:center;padding:0 90px 0 100px}
+.t-end2 h1{color:#fff;font-size:100px}
+.t-end2 .tag{color:rgba(255,255,255,.85);font-size:30px;margin-top:24px}
+.t-end2 .me{display:flex;align-items:center;gap:30px;margin-top:70px}
+.t-end2 .photo{width:170px;height:170px;border-radius:50%;object-fit:cover;border:5px solid rgba(255,255,255,.9)}
+.t-end2 .nm{color:#fff;font-size:34px;font-weight:700}
+.t-end2 .rl{color:rgba(255,255,255,.8);font-size:21px;line-height:1.45;margin-top:8px}
+.t-end2 .right{display:flex;gap:40px;justify-content:flex-end}
+.t-end2 .qrc{background:#fff;padding:26px 26px 22px;text-align:center;width:300px}
+.t-end2 .qrc img{width:248px;height:248px;display:block;margin:0 auto}
+.t-end2 .ql{font-size:22px;font-weight:700;color:var(--violet);margin-top:16px}
+.t-end2 .qu{font-size:19px;color:#4a4a4a;margin-top:6px}
 </style>
 </head>
 <body>
@@ -643,10 +657,30 @@ p.small{font-size:22px;line-height:1.5;color:#5a5a5a}
     </section>
 
     <!-- 29 -->
-    <section class="slide t-end" data-t="Vos questions">
-      <h1>Vos questions</h1>
-      <p>Du prompt au contexte, du contexte à l'agent.</p>
-      <p style="margin-top:52px;font-size:22px;opacity:.75">Julien Morice · Service PracTice<br>Institut Mines-Télécom Business School</p>
+    <section class="slide t-end2" data-t="Vos questions">
+      <div class="left">
+        <h1>Vos questions</h1>
+        <p class="tag">Du prompt au contexte, du contexte à l'agent.</p>
+        <div class="me">
+          <img class="photo" src="images/julien_morice.jpg" alt="Julien Morice">
+          <div>
+            <div class="nm">Julien Morice</div>
+            <div class="rl">Responsable du service PracTice<br>Institut Mines-Télécom Business School</div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="qrc">
+          <img src="images/qr_presentation.png" alt="QR code de la présentation">
+          <div class="ql">La présentation</div>
+          <div class="qu">shorturl.at/gRv4i</div>
+        </div>
+        <div class="qrc">
+          <img src="images/qr_linkedin.png" alt="QR code du profil LinkedIn de Julien Morice">
+          <div class="ql">Restons en contact</div>
+          <div class="qu">LinkedIn · moricejulien</div>
+        </div>
+      </div>
     </section>
 
   </div>
