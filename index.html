@@ -300,6 +300,12 @@ p.small{font-size:22px;line-height:1.5;color:#5a5a5a}
 .t-end2 .qrc img{width:248px;height:248px;display:block;margin:0 auto}
 .t-end2 .ql{font-size:22px;font-weight:700;color:var(--violet);margin-top:16px}
 .t-end2 .qu{font-size:19px;color:#4a4a4a;margin-top:6px}
+
+/* ---------- mention d'auteur ---------- */
+#credit{position:fixed;left:50%;transform:translateX(-50%);bottom:14px;z-index:40;font-family:var(--sans);
+  font-size:12px;letter-spacing:.06em;color:rgba(140,140,140,.85);pointer-events:none;user-select:none;white-space:nowrap}
+#credit.off{display:none}
+@media (hover:none) and (orientation:portrait){#credit{bottom:calc(64px + env(safe-area-inset-bottom))}}
 </style>
 </head>
 <body>
@@ -689,6 +695,7 @@ p.small{font-size:22px;line-height:1.5;color:#5a5a5a}
 </div>
 
 <div id="bar"></div>
+<div id="credit">© 2026 Julien Morice · IMT Business School</div>
 <div id="num">1 / 21</div>
 <div id="hint">← → naviguer · F plein écran · S sommaire</div>
 <div id="toc" role="dialog" aria-label="Sommaire">
@@ -747,6 +754,7 @@ p.small{font-size:22px;line-height:1.5;color:#5a5a5a}
     slides[i].classList.add('on');
     bar.style.width=((i+1)/slides.length*100)+'%';
     num.textContent=(i+1)+' / '+slides.length;
+    var cr=document.getElementById('credit'); if(cr) cr.classList.toggle('off', i===0 || i===slides.length-1 || slides[i].classList.contains('t-embed'));
     if(history.replaceState) history.replaceState(null,'','#'+(i+1));
   }
 
