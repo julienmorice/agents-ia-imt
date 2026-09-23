@@ -302,11 +302,11 @@ p.small{font-size:22px;line-height:1.5;color:#5a5a5a}
 .t-end2 .qu{font-size:19px;color:#4a4a4a;margin-top:6px}
 
 /* ---------- mention d'auteur ---------- */
-#credit{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(44px + env(safe-area-inset-bottom));z-index:40;font-family:var(--sans);
+#credit{position:fixed;right:calc(96px + env(safe-area-inset-right));bottom:calc(18px + env(safe-area-inset-bottom));z-index:40;font-family:var(--sans);
   font-size:12px;letter-spacing:.06em;color:rgba(140,140,140,.85);pointer-events:none;user-select:none;white-space:nowrap}
 #credit.off{display:none}
-@media (hover:none),(pointer:coarse){#credit{bottom:calc(44px + env(safe-area-inset-bottom))}}
-@media (hover:none) and (orientation:portrait){#credit{bottom:calc(64px + env(safe-area-inset-bottom))}}
+@media (hover:none),(pointer:coarse){#credit{right:calc(104px + env(safe-area-inset-right));bottom:calc(20px + env(safe-area-inset-bottom))}}
+@media (hover:none) and (orientation:portrait){#credit{right:auto;left:50%;transform:translateX(-50%);bottom:calc(122px + env(safe-area-inset-bottom))}}
 </style>
 </head>
 <body>
